@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="#DAD9D9"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/catimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/women" />
+
+    <TextView
+        android:id="@+id/cattitle"
+        style="@style/smalltext"
+        android:text="@string/women_s_fashion"
+        android:textAlignment="center" />
+</LinearLayout>

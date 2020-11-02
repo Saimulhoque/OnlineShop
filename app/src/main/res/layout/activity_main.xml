@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEEE"
+    tools:context=".ui.MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search Products" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/slideview"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"></androidx.viewpager.widget.ViewPager>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/categories"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/mensfashion"
+                        android:layout_marginBottom="10dp"
+                        style="@style/homegridcard">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:contentDescription="@string/icon"
+                                android:layout_gravity="center"
+                                android:src="@drawable/mens" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/men_s_fashion"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/womenfashion"
+                        android:layout_marginBottom="10dp"
+                        style="@style/homegridcard">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/icon"
+                                android:src="@drawable/womens" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/women_s_fashion"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/electronicsdevice"
+                        android:layout_marginBottom="10dp"
+                        style="@style/homegridcard">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/icon"
+                                android:src="@drawable/electronicsdevices" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/electronics_devices"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:contentDescription="@string/icon"
+                                android:layout_gravity="center"
+                                android:src="@drawable/router" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/computer_amp_networking"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/icon"
+                                android:src="@drawable/beauty" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/beauty_health"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/icon"
+                                android:src="@drawable/baby" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/babys_toys"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/icon"
+                                android:src="@drawable/electronics" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/electronics_accessories"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:contentDescription="@string/icon"
+                                android:layout_gravity="center"
+                                android:src="@drawable/watch" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/watches_accessories"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/automobile"
+                                android:contentDescription="@string/icon" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/automotive_motorbike"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/icon"
+                                android:src="@drawable/officeequipment" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/office_equipment"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/groceries"
+                                android:contentDescription="@string/icon" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/groceries_amp_pets"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            style="@style/verticallayout"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/icon"
+                                android:src="@drawable/houseapplience" />
+
+                            <TextView
+                                style="@style/smalltext"
+                                android:text="@string/home_appliances"
+                                android:textAlignment="center" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>
